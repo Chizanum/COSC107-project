@@ -1,0 +1,41 @@
+.container {
+    margin: auto;
+    position: absolute;
+    top: 43%;
+    left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.timer-block{
+    background-color: rgba(128, 128, 128, 0.568);
+    padding-inline: 2px;
+}
+
+button {
+    padding-block: 0.6rem;
+    padding-inline: 1.8rem;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: grey;
+    font-family: monospace;
+    margin: 5px;
+}
+
+
+body{
+    background-color: rgba(0, 0, 0, 0.336);
+}
