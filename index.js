@@ -20,10 +20,17 @@ function count() {
 
     const distance = countdownDate - now;
     
-    const days =   Math.floor(distance/ (1000*60*60*24));
-    const hours =  Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-    const minute = Math.floor((distance % (1000*60*60))/(1000*60));
-    const secs =   Math.floor((distance % (1000*60))/1000);
+    let days =   Math.floor(distance/ (1000*60*60*24));
+    let hours =  Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+    let minute = Math.floor((distance % (1000*60*60))/(1000*60));
+    let secs =   Math.floor((distance % (1000*60))/1000);
+
+    days= days < 10 ? '0'+ days: days;
+    hours= hours < 10 ? '0'+ hours: hours;
+    minute= minute < 10 ? '0'+ minute: minute;
+    secs= secs < 10 ? '0'+ secs: secs;
+
+   
     d.innerHTML= `${days}`;
     h.innerHTML= `${hours}`;
     m.innerHTML= `${minute}`;
